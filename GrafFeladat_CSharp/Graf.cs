@@ -67,27 +67,27 @@ namespace GrafFeladat_CSharp
 
         public void Torol(int cs1, int cs2)
         {
-            El e1 = new El(cs1, cs2);
-            El e2 = new El(cs2, cs1);
-            elek.Remove(e1);
-            elek.Remove(e2);
+            //El e1 = new El(cs1, cs2);
+            //El e2 = new El(cs2, cs1);
+            //elek.Remove(e1);
+            //elek.Remove(e2);
 
-            int index = 0;
-            int index2 = 0;
-            for (int i = 0; i < elek.Count; i++)
-            {
-                if (elek[i] == e1)
-                {
-                    index = i;
-                }
-                if (elek[i] == e2)
-                {
-                    index2 = i;
-                }
-            }
+            //int index = 0;
+            //int index2 = 0;
+            //for (int i = 0; i < elek.Count; i++)
+            //{
+            //    if (elek[i] == e1)
+            //    {
+            //        index = i;
+            //    }
+            //    if (elek[i] == e2)
+            //    {
+            //        index2 = i;
+            //    }
+            //}
 
-            elek.RemoveAt(index);
-            elek.RemoveAt(index2);
+            //elek.RemoveAt(index);
+            //elek.RemoveAt(index2);
         }
 
 
@@ -127,16 +127,15 @@ namespace GrafFeladat_CSharp
                     bejart.Add(item.Csucs2);
                 }
             }
-
-
             // Jöhet a sor szerinti következő elem
+
+
         }
 
 
         public void MelysegiBejar(int kezdopont)
         {
             HashSet<int> bejart = new HashSet<int>();
-
 
 
             Stack<int> kovetkezok = new Stack<int>();

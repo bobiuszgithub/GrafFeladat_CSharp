@@ -20,7 +20,24 @@ namespace GrafFeladat_CSharp
             graf.Hozzaad(4, 5);
             graf.Hozzaad(2, 4);
 
-            graf.Torol(0, 1);
+            // graf.Torol(0, 1);
+
+            Console.WriteLine("A szélességi bejárás algoritmusa");
+            graf.SzelessegiBejar(3);
+
+
+            Console.WriteLine();
+            Console.WriteLine("A mélységi bejárás bejárás algoritmusa");
+            graf.MelysegiBejar(4);
+
+            Console.WriteLine();
+            Console.WriteLine("Összefüggőség");
+            Console.WriteLine(graf.Osszefuggo(3));
+
+            Console.WriteLine();
+            Console.WriteLine("Feszítőfa");
+            Console.WriteLine(graf.Feszitofa(3) + "\n");
+
 
             Console.WriteLine(graf);
             Console.ReadLine();
