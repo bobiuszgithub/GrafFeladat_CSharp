@@ -96,12 +96,10 @@ namespace GrafFeladat_CSharp
             //Kezdetben egy pontot sem jártunk be
             HashSet<int> bejart = new HashSet<int>();
 
-
             // A következőnek vizsgált elem a kezdőpont
             Queue<int> kovetkezok = new Queue<int>();
             kovetkezok.Enqueue(kezdopont);
             bejart.Add(kezdopont);
-
 
 
             // Amíg van következő, addig megyünk
@@ -115,7 +113,6 @@ namespace GrafFeladat_CSharp
 
             // Elvégezzük a bejárási műveletet, pl. a konzolra kiírást:
             Console.WriteLine(this.csucsok[kezdopont]);
-
 
             foreach (var item in this.elek)
             {
@@ -136,7 +133,6 @@ namespace GrafFeladat_CSharp
         public void MelysegiBejar(int kezdopont)
         {
             HashSet<int> bejart = new HashSet<int>();
-
 
             Stack<int> kovetkezok = new Stack<int>();
             kovetkezok.Push(kezdopont);
@@ -170,8 +166,6 @@ namespace GrafFeladat_CSharp
         public bool Osszefuggo(int kezdopont)
         {
             HashSet<int> bejart = new HashSet<int>();
-
-
 
             Queue<int> kovetkezok = new Queue<int>();
             kovetkezok.Enqueue(0);
